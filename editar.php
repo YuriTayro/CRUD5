@@ -27,7 +27,7 @@ if($id){
     exit;
 }
 
-echo print_r($info);
+//echo print_r($info);
 
 ?>
 
@@ -35,7 +35,7 @@ echo print_r($info);
 <h1>Editar Usuário</h1>
 
 <form action="editar_action.php" method="POST">
-    <input type="hidden" name="id" value="<?php echo $id ?>" />
+    <input type="hidden" name="id" value="<?php echo $info['id'] ?>" />
     <label>
         NOME:<br>
         <input type="text" name="name" value="<?php echo $info['nome']?>" />

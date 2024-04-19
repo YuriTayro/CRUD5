@@ -53,12 +53,12 @@ if ($sql->execute()) { // Verifica se a consulta foi executada com sucesso
         <tbody>
             <?php foreach ($lista as $usuario): ?>
                 <tr>
-                    <td><?php echo $usuario['id'] ?></td>
-                    <td><?php echo $usuario['nome'] ?></td>
-                    <td><?php echo $usuario['email'] ?></td>
+                    <td><?php echo $usuario['id']; ?></td>
+                    <td><?php echo $usuario['nome']; ?></td>
+                    <td><?php echo $usuario['email']; ?></td>
                     <td>
-                        <a href="editar.php?id=<?php echo $usuario['id'] ?>">[ Editar ]</a>
-                        <a href="excluir.php?id=<?php echo $usuario['id'] ?>">[ Excluir ]</a>
+                        <a href="editar.php?id=<?php echo $usuario['id']; ?>">[ Editar ]</a>
+                        <a href="excluir.php?id=<?php echo $usuario['id']; ?>">[ Excluir ]</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
